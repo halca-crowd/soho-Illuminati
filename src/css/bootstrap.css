@@ -899,6 +899,10 @@ iframe {
   margin-bottom: 1.5rem !important;
 }
 
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
 /* rtl:begin:remove */
 
 /* rtl:end:remove */
