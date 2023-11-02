@@ -9,7 +9,7 @@ on:
     #   - 'next-crowd4u-v*'
 env:
   AWS_REGION: ap-northeast-1
-  AWS_ROLE_ARN: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/GitHubDeploy # GitHub　Actions用に作成したIAMロールのARN
+  AWS_ROLE_ARN: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/${{ secrets.AWS_ROLE_NAME }} # GitHub　Actions用に作成したIAMロールのARN
 
 jobs:
   build:
@@ -27,9 +27,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main # リポジトリをチェックアウト
 
-      - name: Upload next-crowd4u bundle files # S3にデプロイ
-        run: aws s3 cp --recursive --region ap-northeast-1 index.html s3://${{secrets.AWS_BUCKET_NAME}}
-
-      - name: Clear cache
-        run: |
-          aws cloudfront create-invalidation --distribution-id E1XJ1Y5KDXHMK9 --paths "/*"
+      - name: Upload files # S3にデプロイ
+        run: aws s3 cp --region ap-northeast-1 index.html s3://${{secrets.AWS_BUCKET_NAME}}/index.html
