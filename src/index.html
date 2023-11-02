@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>シン・SOHO祭ホームページ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <article>
+            <section class="container">
+                <h1>Make SOHO-Fes great again!</h1>
+                <section>
+                    <h2 id="booths">ブース</h2>
+                    <div class="container justify-content-center">
+                        <div class="row align-items-start">
+                            <div class="col col-12 col-xl-4">
+                                <h1>全体</h1>
+                                <a href="" class="btn btn-primary">PDF</a>
+                                <a href="" class="btn btn-primary">画像</a>
+                            </div>
+                            <div class="col col-12 col-xl-4">
+                                <h1>第1エリア</h1>
+                                <a href="" class="btn btn-primary">PDF</a>
+                                <a href="" class="btn btn-primary">画像</a>
+                            </div>
+                            <div class="col col-12 col-xl-4">
+                                <h1>第2・3エリア</h1>
+                                <a href="" class="btn btn-primary">PDF</a>
+                                <a href="" class="btn btn-primary">画像</a>
+                            </div>
+                            <div class="col col-12 col-xl-4">
+                                <h1>体芸エリア</h1>
+                                <a href="" class="btn btn-primary">PDF</a>
+                                <a href="" class="btn btn-primary">画像</a>
+                            </div>
+                            <div class="col col-12 col-xl-4">
+                                <h1>大学会館</h1>
+                                <a href="" class="btn btn-primary">PDF</a>
+                                <a href="" class="btn btn-primary">画像</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto">
+                                <label for="area-selection" class="col-form-label">エリア: </label>
+                            </div>
+                            <div class="col-auto">
+                                <select id="area-selection" name="area-selection" class="form-select">
+                                    <option value="">エリアを選択してください</option>
+                                    <option value="1">第1エリア</option>
+                                    <option value="2">第2・3エリア</option>
+                                    <option value="5">体芸エリア</option>
+                                    <option value="9">大学会館</option>
+                                    <option value="0">その他</option>
+                                </select>                          
+                            </div>
+                        </div>
+                        <div class="row align-items-start">
+                            <div class="col col-12 col-xl-4 booth area-1">
+                                <h1>第1エリア</h1>
+                            </div>
+                            <div class="col col-12 col-xl-4 booth area-2">
+                                <h1>第2・3エリア</h1>
+                            </div>
+                            <div class="col col-12 col-xl-4 booth area-5">
+                                <h1>体芸エリア</h1>
+                            </div>
+                            <div class="col col-12 col-xl-4 booth area-9">
+                                <h1>大学会館</h1>
+                            </div>
+                            <div class="col col-12 col-xl-4 booth area-0">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="stages">ステージ企画</h2>
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&mode=WEEK&src=Y19jM2I0YzExM2Y0ZjMyYmFiMDIwOTcxZjYxOTFkOWZmMjk3NTYyMDA0NzlhYWZkZGM5ODllZGEyMGRkMTAwOTRmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%239E69AF"
+                        style="border:solid 1px #777"
+                        width="800"
+                        height="600"
+                        frameborder="0"
+                        scrolling="no"
+                    >
+                    </iframe>
+                </section>
+            </section>
+        </article>
+        <hr />
+    </main>
+    <footer>
+        <a href="https://github.com/halca-crowd/soho-Illuminati">GitHub</a>
+    </footer>
+</body>
+
+</html>
