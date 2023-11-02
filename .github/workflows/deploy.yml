@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@main # リポジトリをチェックアウト
 
       - name: Upload files # S3にデプロイ
-        run: aws s3 cp --region ap-northeast-1 index.html s3://${{secrets.AWS_BUCKET_NAME}}/index.html
+        run: aws s3 cp --recursive --region ap-northeast-1 src/ s3://${{secrets.AWS_BUCKET_NAME}}/pages/
 
       - name: Clear cache
         run: |
